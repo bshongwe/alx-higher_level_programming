@@ -2,8 +2,7 @@
 # 5-print_comb2.py
 
 """Prints numbers from 0 to 99"""
-for i in range(0, 100):
-    if i != 99:
-        print(f"{i:02}", end=", ")
-    else:
-        print(f"{i}")
+i = 0
+for i in range(99):
+    print("{0:02}"format(i), end=", ")
+print("99")
