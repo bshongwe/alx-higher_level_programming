@@ -4,7 +4,7 @@
 """Prints a string in uppercase"""
 def uppercase(str):
     for i in str:
-        if (97 <= i <= 122):
-            i = chr(ord)i) - 32)
-            print("{}".format(i), end="")
+        if ord(i) >= 97 and ord(i) <= 122:
+            i = chr(ord(i) - 32)
+        print("{}".format(i), end="")
     print("")
