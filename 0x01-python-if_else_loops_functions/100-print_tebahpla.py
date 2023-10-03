@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 100-print_tebahpla.py
 
-"""Print the ASCII alphabet, in reverse order, alternating lowercase and uppercase"""
+"""Print ASCII alphabet, in reverse order, lowercase and uppercase"""
 
 
 for i in range(ord('z'), ord('a') - 1, -1):
