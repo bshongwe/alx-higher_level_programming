@@ -2,12 +2,14 @@
 # 6-print_comb3.py
 
 """Prints all possible different combinations of two digits"""
-for i in range(0, 10):
-    for j in range(i, 10):
-        if (j == i):
-            continue
-        if (i == 8 and j == 9):
-            print(f"{i}{j}")
-            continue
-        if (j != 0 and i != 10):
-            print(f"{i}{j}", end=", ")
+n = 0
+for i in range(10):
+    j = 1 + n
+    while j < 10:
+        print("{}{}".format(i, j), end="")
+        if i == 8 and j == 9:
+            break
+        j += 1
+        print(",", end=" ")
+    n += 1
+print("")
