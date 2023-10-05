@@ -4,23 +4,25 @@
 """Import all functions from calculator_1.py and handle basic operations"""
 
 
-from sys import argv, exit
-from calculator_1 import add, sub, mul, div
 if __name__ == "__main__":
-    argc = len(argv)
-    if (argc != 4):
+    import sys
+    from calculator_1 import add, div, sub, mul
+    if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-    i = 0
-    a = int(argv[1])
-    b = int(argv[3])
-    operators = [('+', add), ('-', sub), ('*', mul), ('/', div)]
-    while (i <= 3):
-        op = operators[i][0]
-        if argv[2] == op:
-            print("{} {} {} = {}".format(a, argv[2], b, operators[i][1](a, b)))
-            break
-        i += 1
-        if (i == 4):
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+        sys.exit(1)
+    n1, op, n2 = int(sys.argv[1]), sys.argv[2], int(sys.argv[3])
+
+    def error(n, nn):
+        print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
+
+    def switch(op):
+        switcher = {
+                "+": add,
+                "-": sub,
+                "*": mul,
+                "/": div,
+                }
+        return switcher.get(op, error)
+    r = switch(op)(n1, n2)
+    print(f"{n1} {op} {n2} = {r}")
