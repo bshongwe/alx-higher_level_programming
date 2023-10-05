@@ -1,4 +1,4 @@
-#!/sur/bin/python3
+#!/usr/bin/python3
 # 5-variable_load.py
 
 """Import variable a from variable_load_5.py and print value"""
