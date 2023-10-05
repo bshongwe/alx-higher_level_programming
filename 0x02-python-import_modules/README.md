@@ -29,17 +29,17 @@ You have to assign:
 -  and use those two variables as arguments when calling the functions add and print
 -  a and b must be defined in 2 different lines: a = 1 and another b = 2
 
-Your program should print: <a value> + <b value> = <add(a, b) value> followed with a new line
+Your program should print: <code> \<a value> + \<b value> = <add(a, b) value> </code> followed with a new line
 -  You can only use the word add_0 once in your code
 -  You are not allowed to use * for importing or __import__
--  Your code should not be executed when imported - by using __import__, like the example below
+-  Your code should not be executed when imported - by using __import__
 
 Import filename 1: <code>add_0.py</code>
 
 Test checkout: <code>./0-add.py</code>
 
-Test filename 2: <code>0-import_add.py</code>
--  use <code>python3 0-import_add.py</code>
+Test filename 2: <code>0-import_add.py</code> then use <code>python3 0-import_add.py</code>
+
 
 Repo:
 
@@ -180,7 +180,7 @@ Write a program that imports all functions from the file calculator_1.py and han
 Usage: <code>./100-my_calculator.py a operator b</code>
 
 If the number of arguments is not 3, your program has to:
--  print Usage: ./100-my_calculator.py <a> <operator> <b> followed with a new line
+-  print Usage: ./100-my_calculator.py \<a> \<operator> \<b> followed with a new line
 -  exit with the value 1
 
 operator can be:
@@ -194,7 +194,7 @@ If the operator is not one of the above:
 -  exit with the value 1
 
 You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
--  The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
+-  The result should be printed like this: \<a> \<operator> \<b> = \<result>, followed by a new line
 -  You are not allowed to use * for importing or __import__
 -  Your code should not be executed when imported
 
@@ -202,7 +202,7 @@ Import file: <code>calculator_1.py</code>
 
 Test checkout: <code>./100-my_calculator.py ; echo $?</code>
 
-Usage: <code>./100-my_calculator.py <a> <operator> <b></code>
+Usage: <code>./100-my_calculator.py \<a> \<operator> \<b></code>
 
 Test 1: <code>./100-my_calculator.py 3 + 5 ; echo $?</code>
 
