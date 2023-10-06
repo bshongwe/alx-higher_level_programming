@@ -5,8 +5,8 @@
 def no_c(my_string):
     """Remove all c and C characters in string"""
     new_string = ""
-    for index in my_string:
-        if index == "c" or index == "C":
+    for item in my_string:
+        if item == "c" or item == "C":
             continue
-        new_string += index
+        new_string += item
     return new_string
