@@ -2,57 +2,76 @@
 #include "lists.h"
 #include <stdlib.h>
 
+listint_t *reverse_listint(listint_t **head);
+int is_palindrome(listint_t **head);
 /**
- * listint_len - func prints elements number in linked list
- * @h: list
- * Return: number of nodes
+ * reverse_listint - func reverses singly-linked listint_t list
+ * @head: head node pointer of list
+ * Return: list head pointer
  */
-size_t listint_len(const listint_t *h)
+listint_t *reverse_listint(listint_t **head)
 {
-	int num_nodes = 0;
+	listint_t *node = *head, *next, *prev = NULL;
 
-	for (num_nodes = 0; h != NULL; num_nodes++)
+	while (node)
 	{
-		h = h->next;
+		next = node->next;
+		node->next = prev;
+		prev = node;
+		node = next;
 	}
-	return (num_nodes);
+	*head = prev;
+	return (*head);
 }
-
 /**
- * is_palindrome - Checks if a linked list is palindrome or not
- * @head: Linked list
- * Return: if is not palindrome (0), otherwise return 1
+ * is_palindrome - func checks if singly linked list is a palindrome
+ * @head: head linked list pointer
+ * Return: if linked list is not a palindrome (0),
+ * if linked list is a palindrome (1)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *aux = *head;
-	int length = 0, *array = NULL, num_nodes = 0, j = 0;
+	listint_t *tmp, *rev, *mid;
+	size_t size = 0, i;
 
-	if (!head || !*head)
+	if (*head == NULL || (*head)->next == NULL)
 	{
 		return (1);
 	}
-	length = listint_len(*head);
-	array = malloc(sizeof(int) * length);
-	if (!array)
+
+	tmp = *head;
+	while (tmp)
 	{
-		return (-1);
+		size++;
+		tmp = tmp->next;
 	}
-	while (num_nodes < length)
+
+	tmp = *head;
+	for (i = 0; i < (size / 2) - 1; i++)
 	{
-		array[num_nodes] = aux->n;
-		aux = aux->next;
-		num_nodes++;
+		tmp = tmp->next;
 	}
-	j = length - 1;
-	for (num_nodes = 0; num_nodes < (length - 1) / 2; num_nodes++, j--)
+
+	if ((size % 2) == 0 && tmp->n != tmp->next->n)
 	{
-		if (array[num_nodes] != array[j])
+		return (0);
+	}
+
+	tmp = tmp->next->next;
+	rev = reverse_listint(&tmp);
+	mid = rev;
+
+	tmp = *head;
+	while (rev)
+	{
+		if (tmp->n != rev->n)
 		{
-			free(array);
 			return (0);
 		}
+		tmp = tmp->next;
+		rev = rev->next;
 	}
-	free(array);
+	reverse_listint(&mid);
+
 	return (1);
 }
