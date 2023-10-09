@@ -355,6 +355,7 @@ CPython is the reference implementation of the Python programming language. Writ
 Since we now know a bit of C, we can look at what is happening under the hood of Python. Let’s have fun with Python and C, and let’s look at what makes Python so easy to use.
 
 TODO: <code>cython print_python_list_info.c test_lists.py -o Python_lists.so</code>
+-	Checker worked despite having done this... hmm? Not sure why... Need to understand why this worked, more importantly, why it wasn't before I did what I did.
 
 All your files will be interpreted/compiled on Ubuntu 14.04 LTS
 
