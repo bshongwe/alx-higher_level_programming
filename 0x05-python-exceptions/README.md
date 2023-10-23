@@ -222,12 +222,12 @@ Prototype: def safe_function(fct, *args):
 -	You can assume fct will be always a pointer to a function
 -	Returns the result of the function,
 -	Otherwise, returns None if something happens during the function and prints in stderr the error precede by Exception:
--	You have to use try: / except:
+-	You have to use <code>try: / except:</code>
 
-Tests:
--	Test file: <code>101-main.py</code>
--       Test 1: <code>./101-main.py</code>
--       Test 2: <code>./101-main.py 2> /dev/null</code>
+	Tests:
+	-	Test file: <code>101-main.py</code>
+	-	Test 1: <code>./101-main.py</code>
+	-	Test 2: <code>./101-main.py 2> /dev/null</code>
 
 Repo:
 		GitHub repository: alx-higher_level_programming
