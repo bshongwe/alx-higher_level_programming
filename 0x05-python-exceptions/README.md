@@ -30,6 +30,10 @@ Prototype: def safe_print_list(my_list=[], x=0):
 -	You have to use try: / except:
 -	You are not allowed to import any module
 -	You are not allowed to use len()
+
+Test file: <code>0-main.py</code>
+
+Test checkout: <code>./0-main.py</code>
  
 Repo:
 
@@ -52,6 +56,10 @@ Prototype: def safe_print_integer(value):
 -	You have to use "{:d}".format() to print as integer
 -	You are not allowed to import any module
 -	You are not allowed to use type()
+
+Tests:
+-	Test file: <code>1-main.py</code>
+-	Test checkout: <code>./1-main.py</code>
  
 Repo:
 
@@ -76,6 +84,10 @@ Prototype: def safe_print_list_integers(my_list=[], x=0):
 -	You are not allowed to import any module
 -	You are not allowed to use len()
 
+Tests:
+-	Test file: <code>2-main.py</code>
+-	Test checkout: <code>./2-main.py</code>
+
 Repo:
 
 		GitHub repository: alx-higher_level_programming
@@ -95,6 +107,10 @@ Prototype: def safe_print_division(a, b):
 -	You have to use try: / except: / finally:
 -	You have to use "{}".format() to print the result
 -	You are not allowed to import any module
+
+Tests:
+-	Test file: <code>3-main.py</code>
+-	Test checkout: <code>./3-main.py</code>
 
 Repo:
 
@@ -122,6 +138,10 @@ Prototype: def list_division(my_list_1, my_list_2, list_length):
 -	You have to use try: / except: / finally:
 -	You are not allowed to import any module
 
+Tests:
+-	Test file: <code>4-main.py</code>
+-	Test checkout: <code>./4-main.py</code>
+
 Repo:
 
 		GitHub repository: alx-higher_level_programming
@@ -137,6 +157,10 @@ Write a function that raises a type exception.
 Prototype: def raise_exception():
 -	You are not allowed to import any module
 
+Tests:
+-	Test file: <code>5-main.py</code>
+-	Test checkout: <code>./5-main.py</code>
+
 Repo:
 
 		GitHub repository: alx-higher_level_programming
@@ -151,6 +175,10 @@ Write a function that raises a name exception with a message.
 
 Prototype: def raise_exception_msg(message=""):
 -	You are not allowed to import any module
+
+Tests:
+-	Test file: <code>6-main.py</code>
+-	Test checkout: <code>./6-main.py</code>
  
 Repo:
 
@@ -173,6 +201,11 @@ Prototype: def safe_print_integer_err(value):
 -	You have to use "{:d}".format() to print as integer
 -	You are not allowed to use type()
 
+Tests:
+-	Test file: <code>100-main.py</code>
+-	Test 1: <code>./100-main.py</code>
+-	Test 2: <code>./100-main.py 2> /dev/null</code>
+
 Repo:
 
 		GitHub repository: alx-higher_level_programming
@@ -191,8 +224,12 @@ Prototype: def safe_function(fct, *args):
 -	Otherwise, returns None if something happens during the function and prints in stderr the error precede by Exception:
 -	You have to use try: / except:
 
-Repo:
+Tests:
+-	Test file: <code>101-main.py</code>
+-       Test 1: <code>./101-main.py</code>
+-       Test 2: <code>./101-main.py 2> /dev/null</code>
 
+Repo:
 		GitHub repository: alx-higher_level_programming
 		Directory: 0x05-python-exceptions
 		File: 101-safe_function.py
@@ -262,11 +299,10 @@ About:
 -	The python script will be launched using the -u option (Force stdout to be unbuffered).
 -	It is <strong>strongly</strong> advised to either use setbuf(stdout, NULL); or fflush(stdout) in your C functions IF you choose to use printf. The reason to that is that Pythonsprintand libCs printf don’t share the same buffer, and the output can appear disordered.
 
-CPython compilation: <code>gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c</code>
-
-Edge test file: <code>103-tests.py</code>
-
-Test checkout: <code>./103-tests.py</code>
+Tests:
+-	CPython compilation: <code>gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c</code>
+-	Edge test file: <code>103-tests.py</code>
+-	Test checkout: <code>./103-tests.py</code>
 
 Repo:
 
