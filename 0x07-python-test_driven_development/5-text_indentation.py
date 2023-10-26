@@ -4,12 +4,10 @@
 
 def text_indentation(text):
     """Method for adding 2 new lines after '.?:' chars.
-
     Args:
-        text: The str text.
-
+        text: The str text
     Raises:
-        TypeError: If text is not a str.
+        TypeError: If text is not a str
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
@@ -19,7 +17,7 @@ def text_indentation(text):
         text = (delim + "\n\n").join(
             [line.strip(" ") for line in text.split(delim)])
 
-        print(text, end="")
+    print(text, end="")
 
 if __name__ == "__main__":
     import doctest
