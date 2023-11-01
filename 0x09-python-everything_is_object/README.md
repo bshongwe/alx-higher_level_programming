@@ -161,113 +161,127 @@ What do these 3 lines print?
 
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 8-answer.txt
-    
-9. Is really the same
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 8-answer.txt
+
+
+## Task 9. Is really the same
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What do these 3 lines print?
 
 >>> s1 = "Best School"
 >>> s2 = "Best School"
 >>> print(s1 is s2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 9-answer.txt
-    
-10. And with a list, is it equal
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 9-answer.txt
+
+
+## Task 10. And with a list, is it equal
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What do these 3 lines print?
 
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3] 
 >>> print(l1 == l2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 10-answer.txt
-    
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 10-answer.txt
+
+
 11. And with a list, is it the same
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What do these 3 lines print?
 
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3] 
 >>> print(l1 is l2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 11-answer.txt
-    
-12. And with a list, is it really equal
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 11-answer.txt
+
+
+## Task 12. And with a list, is it really equal
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What do these 3 lines print?
 
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 == l2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 12-answer.txt
-    
-13. And with a list, is it really the same
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 12-answer.txt
+
+
+## Task 13. And with a list, is it really the same
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What do these 3 lines print?
 
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 is l2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 13-answer.txt
-    
-14. List append
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 13-answer.txt
+
+## Task 14. List append
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What does this script print?
 
 l1 = [1, 2, 3]
 l2 = l1
 l1.append(4)
 print(l2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 14-answer.txt
-    
-15. List add
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 14-answer.txt
+
+
+## Task 15. List add
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What does this script print?
 
 l1 = [1, 2, 3]
 l2 = l1
 l1 = l1 + [4]
 print(l2)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 15-answer.txt
-    
-16. Integer incrementation
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 15-answer.txt
+
+
+## Task 16. Integer incrementation
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What does this script print?
 
 def increment(n):
@@ -276,15 +290,17 @@ def increment(n):
 a = 1
 increment(a)
 print(a)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 16-answer.txt
-    
-17. List incrementation
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 16-answer.txt
+
+
+## Task 17. List incrementation
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What does this script print?
 
 def increment(n):
@@ -293,15 +309,17 @@ def increment(n):
 l = [1, 2, 3]
 increment(l)
 print(l)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 17-answer.txt
-    
-18. List assignation
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 17-answer.txt
+
+
+## Task 18. List assignation
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 What does this script print?
 
 def assign_value(n, v):
@@ -311,77 +329,62 @@ l1 = [1, 2, 3]
 l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
+
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 18-answer.txt
-    
-19. Copy a list object
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 18-answer.txt
+
+
+## Task 19. Copy a list object
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 Write a function def copy_list(l): that returns a copy of a list.
+-    The input list can contain any type of objects
+-    Your file should be maximum 3-line long (no documentation needed)
+-    You are not allowed to import any module
 
-The input list can contain any type of objects
-Your file should be maximum 3-line long (no documentation needed)
-You are not allowed to import any module
-guillaume@ubuntu:~/0x09$ cat 19-main.py
-#!/usr/bin/python3
-copy_list = __import__('19-copy_list').copy_list
-
-my_list = [1, 2, 3]
-print(my_list)
-
-new_list = copy_list(my_list)
-
-print(my_list)
-print(new_list)
-
-print(new_list == my_list)
-print(new_list is my_list)
-
-guillaume@ubuntu:~/0x09$ ./19-main.py
-[1, 2, 3]
-[1, 2, 3]
-[1, 2, 3]
-True
-False
-guillaume@ubuntu:~/0x09$ wc -l 19-copy_list.py 
-3 19-copy_list.py
-guillaume@ubuntu:~/0x09$ 
-No test cases needed
+### Tests
+-    Test file: 19-main.py
+-    Test 1: ./19-main.py
+-    Test 2: wc -l 19-copy_list.py 
+        -    No test cases needed
 
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 19-copy_list.py
-    
-20. Tuple or not?
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 19-copy_list.py
+
+
+## Task 20. Tuple or not?
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 a = ()
 Is a a tuple? Answer with Yes or No.
 
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 20-answer.txt
-    
-21. Tuple or not?
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 20-answer.txt
+
+
+## Task 21. Tuple or not?
 mandatory
-Score: 100.0% (Checks completed: 100.0%)
+
 a = (1, 2)
 Is a a tuple? Answer with Yes or No.
 
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x09-python-everything_is_object
-File: 21-answer.txt
-    
-22. Tuple or not?
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x09-python-everything_is_object
+    File: 21-answer.txt
+
+
+## Task 22. Tuple or not?
 mandatory
 Score: 100.0% (Checks completed: 100.0%)
 a = (1)
