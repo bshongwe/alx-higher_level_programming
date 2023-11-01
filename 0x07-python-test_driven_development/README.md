@@ -152,7 +152,7 @@ Repo:
 ## Task 5. Max integer - Unittest
 mandatory
 
-Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
+Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests (https://docs.python.org/3/library/unittest.html).
 
 In this task, you will write unittests for the function def max_integer(list=[]):.
 
@@ -233,7 +233,7 @@ Create a function that prints Python strings.
 -  Prototype: void print_python_string(PyObject *p);
 -  Format: see example
 -  If p is not a valid string, print an error message (see example)
--  Read: Unicode HOWTO
+-  Read: Unicode HOWTO (https://docs.python.org/3/howto/unicode.html)
 
 About:
 -  Python version: 3.4
