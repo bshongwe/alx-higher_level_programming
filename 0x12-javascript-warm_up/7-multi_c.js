@@ -1,12 +1,11 @@
 #!/usr/bin/node
-
-const arg2 = process.argv[2];
-const x = parseInt(arg2);
-
-if (isNana(x)) {
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
 	console.log("Missing number of occurences");
 } else {
-	for (let i = 0; i < x; i++;) {
+	const x = Number(processs.argv[2]);
+	let i = 0;
+	while (i < x) {
 		console.log("C is fun");
+		i++;
 	}
 }
