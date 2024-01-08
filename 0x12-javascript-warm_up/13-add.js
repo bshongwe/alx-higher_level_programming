@@ -1,7 +1,6 @@
 #!/usr/bin/node
-
 const add = (a, b) => {
 	return a + b;
 };
 
-module.exports = add;
+console.log(add(2, 3));
