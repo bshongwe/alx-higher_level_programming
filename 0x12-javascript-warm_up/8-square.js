@@ -1,12 +1,11 @@
 #!/usr/bin/node
-function printSquare(n) {
-	if (isNaN(n)) {
-		console.log("Missing size");
-		return;
-	}
-	let i = 0;
-	while (i < n) {
-		console.log("X".repeat(n));
-		i++;
-	}
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
+  console.log('Missing size');
+} else {
+  const x = Number(process.argv[2]);
+  let i = 0;
+  while (i < x) {
+    console.log('X'.repeat(x));
+    i++;
+  }
 }
