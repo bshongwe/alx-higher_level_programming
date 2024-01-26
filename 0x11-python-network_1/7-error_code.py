@@ -3,15 +3,15 @@
 Take in a URL, send request to the URL, display
 the HTTPS response body.
 """
-from sys import argv
-from requests import get
 
 
-if __name__ == "__main__":
-    url = sys.argv[1]
+if __name__ == '__main__':
+    from sys import argv
+    from requests import get
 
-    r = requests.get(url)
-    if r.status_code >= 400:
-        print("Error code: {}".format(r.status_code))
-    else:
-        print(r.text)
+    url = argv[1]
+
+    response = get(url)
+    ERR_TXT = 'Error code: {}'
+    status = response.status_code
+    print(ERR_TXT.format(status) if (status >= 400) else response.text)
