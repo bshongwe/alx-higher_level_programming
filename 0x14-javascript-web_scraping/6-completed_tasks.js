@@ -19,5 +19,9 @@ request.get(process.argv[2], { json: true }, (error, response, body) => {
       }
     }
   });
-  console.log(tasksCompleted);
+
+  // Print users with completed tasks
+  for (const userId in tasksCompleted) {
+    console.log(`User ID ${userId}: ${tasksCompleted[userId]} tasks completed`);
+  }
 });
