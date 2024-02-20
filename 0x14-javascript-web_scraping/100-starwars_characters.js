@@ -11,19 +11,19 @@ request.get(url, (error, response, body) => {
   } else if (response.statusCode !== 200) {
     console.log(`Error: ${response.statusCode} - ${body}`);
   } else {
-    const content = JSON.parse(body);
-    const characters = content.characters;
-    for (let character of characters) {
-      request.get(character, (error, response, body) => {
+    const film = JSON.parse(body);
+    console.log(`Characters in "${film.title}":`);
+    film.characters.forEach(characterUrl => {
+      request.get(characterUrl, (error, response, characterBody) => {
         if (error) {
           console.log(error);
         } else if (response.statusCode !== 200) {
-          console.log(`Error: ${response.statusCode} - ${body}`);
+          console.log(`Error: ${response.statusCode} - ${characterBody}`);
         } else {
-          const names = JSON.parse(body);
-          console.log(names.name);
+          const character = JSON.parse(characterBody);
+          console.log(character.name);
         }
       });
-    }
+    });
   }
 });
