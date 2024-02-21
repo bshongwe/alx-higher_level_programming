@@ -2,36 +2,26 @@
 // Computes tasksCompleted by userID
 
 const request = require('request');
+const url = process.argv[2];
 
-const apiUrl = 'https://jsonplaceholder.typicode.com/todos';
-
-request.get(apiUrl, { json: true }, (error, response, body) => {
-  if (error) {
-    console.error('Error:', error);
-    return;
-  }
-
-  if (response.statusCode !== 200) {
-    console.error('Error:', response.statusCode);
-    return;
-  }
-
-  const tasksCompleted = {};
-
-  // Iterate through each todo item
-  body.forEach((todo) => {
-    // If the task is completed, increment the count for that user ID
-    if (todo.completed) {
-      if (!tasksCompleted[todo.userId]) {
-        tasksCompleted[todo.userId] = 1;
-      } else {
-        tasksCompleted[todo.userId]++;
+request(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
+  } else if (response.statusCode === 200) {
+    const completed = {};
+    const tasks = JSON.parse(body);
+    for (const i in tasks) {
+      const task = tasks[i];
+      if (task.completed === true) {
+        if (completed[task.userId] === undefined) {
+          completed[task.userId] = 1;
+        } else {
+          completed[task.userId]++;
+        }
       }
     }
-  });
-
-  // Print users with completed tasks
-  for (const userId in tasksCompleted) {
-    console.log(`User ID ${userId}: ${tasksCompleted[userId]} tasks completed`);
+    console.log(completed);
+  } else {
+    console.log('An error occured. Status code: ' + response.statusCode);
   }
 });
