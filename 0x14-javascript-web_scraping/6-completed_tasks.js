@@ -2,6 +2,7 @@
 // Computes tasksCompleted by userID
 
 const request = require('request');
+
 const apiUrl = 'https://jsonplaceholder.typicode.com/todos';
 
 request.get(apiUrl, { json: true }, (error, response, body) => {
