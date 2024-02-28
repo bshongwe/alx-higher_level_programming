@@ -2,5 +2,5 @@
 // DIV#toggle_header using jQuery API
 
 $('DIV#toggle_header').click(function () {
-    $('header').ToggleClass('red');
-  });
+  $('header').toggleClass('green red');
+});
